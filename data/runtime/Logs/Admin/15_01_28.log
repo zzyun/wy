@@ -1,0 +1,19 @@
+[ 2015-01-28T14:36:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Rbac&a=roleadd_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wy_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.0030s ]
+SQL: INSERT INTO `wy_role` (`name`,`remark`,`status`,`create_time`) VALUES ('普通管理员','','1','1422426977') [ RunTime:0.0010s ]
+
+[ 2015-01-28T14:36:19+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Rbac&a=authorize&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2015-01-28T14:36:31+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-01-28T14:36:48+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=1&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
